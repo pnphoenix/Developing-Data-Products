@@ -1,0 +1,21 @@
+---
+title: "Map"
+author: "Parth"
+date: "24/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+Mumbai <- c("<a href= 'https://en.wikipedia.org/wiki/Kowloon_Walled_City' >Mumbai </a>")
+leaflet() %>%
+addTiles() %>%
+addMarkers(lat=19.0760, lng=72.8777, popup = Mumbai)
+```
